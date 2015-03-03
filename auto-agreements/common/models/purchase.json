@@ -1,0 +1,53 @@
+{
+  "name": "Purchase",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "taxyear": {
+      "type": "date"
+    },
+    "stopdate": {
+      "type": "date"
+    },
+    "startdate": {
+      "type": "date"
+    },
+    "banknumber": {
+      "type": "number"
+    },
+    "banktype": {
+      "type": "string"
+    },
+    "schedule": {
+      "type": "object"
+    },
+    "shares": {
+      "type": "number"
+    },
+    "shareclass": {
+      "type": "string"
+    },
+    "fund": {
+      "type": "string"
+    },
+    "fundcode": {
+      "type": "number"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "amount": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "account": {
+      "type": "belongsTo",
+      "model": "Account",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

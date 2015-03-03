@@ -1,0 +1,26 @@
+{
+  "name": "Account",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "availablefunds": {
+      "type": "Array"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "purchases": {
+      "type": "hasMany",
+      "model": "Purchase",
+      "foreignKey": "accountId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
